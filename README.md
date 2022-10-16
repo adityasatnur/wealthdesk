@@ -21,10 +21,9 @@ celcius=> farenheit & vice versa conversion is implemented
 slick carousel is used for future weather data
 
 MainApp component includes mainpage, which is further divided in 
-- citylist
-  -city 
--searchbar
--popup
+- citylist=>city 
+- searchbar
+- popup
 
 wheras from city it will redirect to weahterapp page
 which is further divided in carousel & clock
