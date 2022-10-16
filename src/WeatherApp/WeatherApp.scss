@@ -1,0 +1,118 @@
+#weatherApp{
+  color: #fff;
+  display: flex;
+  margin-top: 5rem;
+  max-width: 40rem;
+  margin: 5rem auto 0;
+  @media (max-width:800px){
+    flex-direction: column; 
+    max-width: 100%; 
+    margin: 0;
+  }
+  #left{
+    text-align: left;
+    background: #2E93A1;
+    flex-grow: 0;
+    flex-basis: 65%;
+    overflow: hidden;
+    padding-left: 1rem;
+    position: relative;
+    @media (max-width:800px){
+      flex-basis:100%;
+    }
+    .temp{
+      display: flex;
+      font-size: 25px;
+      span{
+        font-size: 60px;
+        font-weight: 300;
+        }
+        sup{
+        font-size: 15px;
+        }
+        div{
+          position: relative;
+          top: 6px;
+        }
+    }
+    .celcious{
+      background: #4DA3B0;
+      display: inline-block;
+      padding: 0.5rem 0;
+      border-radius: 1rem;
+      font-size: 0.75rem;
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+
+      span{
+        padding: 0.5rem 0.75rem;
+        width: 5rem;
+        border-radius: 50%;
+
+        &.active{
+          background: #9CCCD2;
+          transition: all 0.2s;
+        }
+      }
+    }
+    .date{
+      font-weight: 200;
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
+    .time{
+      font-size: 1.25rem;
+
+    }
+    .weather{
+      display: flex;
+      width: 100%;
+      p{
+        flex-basis: 30%;
+        font-size: 0.75rem;
+        margin: 1rem 0 0;
+      }
+    }
+  }
+  #right{
+    background: #3D98A6;
+    flex-basis: 35%;
+    padding: 1rem;
+    @media (max-width:800px){
+      flex-basis:100%;
+    padding: 4rem;
+
+    }
+    .location{
+      text-align: left;
+      font-size: 1.25rem;
+
+      svg{
+        font-size: 1.5rem;
+        position: relative;
+        top: 5px;
+      }
+    }.weatherSummary{
+      display: flex;
+      justify-content: space-between;
+
+      &>div{
+        opacity: 0.9;
+        font-weight: 200;
+        div{
+        opacity: 1;
+         font-weight: 400;
+        }
+      }
+    }
+    .clocks{
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.342);
+      font-size: 0.85rem;
+    }
+  }
+}

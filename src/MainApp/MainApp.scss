@@ -1,0 +1,65 @@
+#mainApp{
+  @media (max-width:600px){
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  @media (max-width:600px){
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  p{
+    @media (max-width:600px){
+      margin-top: 2rem;
+    }
+    align-self: center;
+  }
+  }
+  .tableHeader{
+    display: flex;
+    font-size: 12px;
+    &>div:first-child{
+      padding-left: 1.5rem;
+      margin: 0 1rem 1rem 0rem;
+    }
+    &>div:nth-child(2){
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+      &>div:last-child{
+      margin-left: 1rem;
+    }
+    .rotated{
+      transform: rotate(180deg);
+      transition: all 0.2s;
+    }
+    .normal{
+      transform: rotate(0deg);
+      transition: all 0.2s;
+
+    }
+  }
+  .btn{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    margin-left: 1rem;
+    background: #3E9AA7;
+    &:hover{
+      cursor: pointer;
+    }
+    &.close{
+      color: #3E9AA7;
+    margin-left: 1rem;
+    background: #fff;
+    border:1px solid #3E9AA7;
+    }
+  }
+}

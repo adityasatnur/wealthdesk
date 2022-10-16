@@ -1,0 +1,24 @@
+.city{
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  display: flex;
+  span{
+    margin-right: 2rem;
+  }
+  a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    flex-grow: 1;
+    text-align: left;
+  }
+  .delete{
+    align-self: flex-end;
+    padding: 0 1rem ;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

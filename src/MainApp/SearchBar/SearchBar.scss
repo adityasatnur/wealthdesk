@@ -1,0 +1,20 @@
+.searchBar{
+  display: flex;
+  align-items: center;
+  #searchText{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+  button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    margin-left: 1rem;
+    background: #3E9AA7;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

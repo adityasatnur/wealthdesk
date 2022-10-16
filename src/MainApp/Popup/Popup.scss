@@ -1,0 +1,47 @@
+#popup{
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  &-body{
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2rem;
+    border-radius: 10px;
+    .head{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      svg{
+        fill:#FEE9F3;
+        font-size: 1.5rem;
+        stroke:#FEAED6;
+        background: #FEE9F3;
+        border-radius: 50%;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    #cityName{
+      display: block;
+      width: 20rem;
+      padding: 0.75rem 1rem ;
+      border:none;
+      background: #DFE7EC;
+      border-radius: 0.5rem;
+      margin-bottom: 2rem;
+      @media (max-width:600px){
+        width: 12rem;
+        max-width: 90%;
+      
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.clock{
+  background: #6FB1BB;
+  border-radius: 5rem;
+  padding: 0.15rem;
+  margin-top: 1rem;
+  svg{
+    font-size: 3rem;
+    color: #FABC56;
+  }
+  span{
+    font-size: 0.75rem;
+  }
+}
+#clockContainer {
+  position: relative;
+  margin: auto;
+  height: 60px;
+  /*to make the height and width responsive*/
+  width: 60px;
+  /*setting our background image*/
+  background-size: 100%;
+}
+
+#hour,
+#minute{
+  position: absolute;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+
+#hour {
+  width: 3px;
+  height: 25%;
+  top: 25%;
+  left: 48.85%;
+  opacity: 0.8;
+  background: blue;
+  
+}
+
+#minute {
+  width: 2px;
+  height: 30%;
+  top: 19%;
+  left: 48.9%;
+  opacity: 0.8;
+  background: red;
+
+}

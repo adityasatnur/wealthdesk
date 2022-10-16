@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@100;200;300;400;500;600;700&display=swap");
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 70%;
+  max-width: calc(100vw - 30%);
+  margin: 2rem auto;
+  @media (max-width:600px){
+    width: 100%;
+  max-width: 100%;
+
+  margin: 0 auto;
+  }
+}
+* {
+  font-family: "Quicksand", sans-serif;
+}
+body,
+p {
+  padding: 0;
+  margin: 0;
+  background: #dff0f2;
+}
+p {
+  background: transparent;
+}
