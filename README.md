@@ -20,7 +20,7 @@ All availble data present in API is shown
 celcius=> farenheit & vice versa conversion is implemented
 slick carousel is used for future weather data
 
-#Aplication design
+## Application design
 MainApp component includes mainpage, which is further divided in 
 - citylist=>city 
 - searchbar
